@@ -1,0 +1,33 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap');
+
+#h1{
+    font-family:'syne',sans-serif ;
+}
+
+#pic {
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity 1s ease-out, transform 1.5s ease-out;
+  }
+  
+  #pic.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  #card-invisible{
+    background-color: transparent;
+  }
+  #h2{
+  font-family: 'syne',sans-serif;
+  }
+  #ha{
+    font-family: 'syne',sans-serif;
+  }
+
+  @media (min-width: 1024px) {
+    .grid-cols-3 > * {
+      flex: 0 0 calc(33.33% - 8px); /* Adjust the percentage and spacing as needed */
+    }
+  }
+  
