@@ -143,3 +143,7 @@ var animation = bodymovin.loadAnimation({
 });
 animation.setSpeed(0.5);
 
+
+
+
+// scroll effect

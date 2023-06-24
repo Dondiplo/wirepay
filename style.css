@@ -31,3 +31,27 @@
     }
   }
   
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .vue3-marquee {
+    animation: marquee 20s linear infinite;
+  }
+  
+  .marquee {
+    display: inline-flex;
+    animation: marquee 20s linear infinite;
+    animation-delay: calc(var(--marquee-delay) * -1s);
+  }
+  
+  .marquee:nth-last-child(2) {
+    animation-delay: calc(var(--marquee-delay) * -1s - 20s);
+  }
+  
